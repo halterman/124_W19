@@ -28,6 +28,8 @@ int main() {
 	//int answer = gcd(num1, num2);
 	//std::cout << "GCD(" << num1 << "," << num2 << ") = "
 	//	      << answer << '\n';
+
+
 	while (true) {
 		std::cout << "Please enter a fraction: ";
 		int numerator, denominator;
@@ -38,5 +40,13 @@ int main() {
 		std::cout << numerator << '/' << denominator << ".\n";
 	}
 
+
+	//int x = 3;
+	//std::cout << "Print #1 " << x << '\n';
+	//{
+	//	int x = 5;
+	//	std::cout << "Print #2 " << x << '\n';
+	//}
+	//std::cout << "Print #3 " << x << '\n';
 
 }
