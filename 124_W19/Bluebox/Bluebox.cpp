@@ -9,7 +9,7 @@ double current_y;
 
 void paint() {
 	sgl::set_color(sgl::BLUE);
-	sgl::fill_rectangle(current_x, current_y, 30, 30);
+	sgl::fill_rectangle(current_x - 15, current_y - 15, 30, 30);
 }
 
 void mouse_pressed(double x, double y, sgl::MouseButton) {
