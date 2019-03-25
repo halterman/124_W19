@@ -75,6 +75,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Add5-c", "Add5-c\Add5-c.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "simplevectorexample", "simplevectorexample\simplevectorexample.vcxproj", "{28C171E7-ED83-49A3-8B5A-6B2F1AE896B5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleVector2", "SimpleVector2\SimpleVector2.vcxproj", "{92B935E0-4213-4A9A-B350-955B4133C862}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -369,6 +371,14 @@ Global
 		{28C171E7-ED83-49A3-8B5A-6B2F1AE896B5}.Release|x64.Build.0 = Release|x64
 		{28C171E7-ED83-49A3-8B5A-6B2F1AE896B5}.Release|x86.ActiveCfg = Release|Win32
 		{28C171E7-ED83-49A3-8B5A-6B2F1AE896B5}.Release|x86.Build.0 = Release|Win32
+		{92B935E0-4213-4A9A-B350-955B4133C862}.Debug|x64.ActiveCfg = Debug|x64
+		{92B935E0-4213-4A9A-B350-955B4133C862}.Debug|x64.Build.0 = Debug|x64
+		{92B935E0-4213-4A9A-B350-955B4133C862}.Debug|x86.ActiveCfg = Debug|Win32
+		{92B935E0-4213-4A9A-B350-955B4133C862}.Debug|x86.Build.0 = Debug|Win32
+		{92B935E0-4213-4A9A-B350-955B4133C862}.Release|x64.ActiveCfg = Release|x64
+		{92B935E0-4213-4A9A-B350-955B4133C862}.Release|x64.Build.0 = Release|x64
+		{92B935E0-4213-4A9A-B350-955B4133C862}.Release|x86.ActiveCfg = Release|Win32
+		{92B935E0-4213-4A9A-B350-955B4133C862}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
