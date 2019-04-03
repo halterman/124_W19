@@ -144,7 +144,6 @@ int main() {
 		}
 		else {
 			std::cout << "The sort is incorrect\n";
-
 		}
 		std::cout << vec2 << '\n';
 		if (contains2(vec2, 74))

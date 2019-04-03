@@ -22,5 +22,4 @@ int main() {
 	std::cout << multiply(4, 5) << '\n';
 	std::cout << evaluate(add, 10, 87) << '\n';
 	std::cout << evaluate(multiply, 10, 87) << '\n';
-    
 }

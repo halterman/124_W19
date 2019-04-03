@@ -14,6 +14,4 @@ int main() {
 	std::cin >> input;
 	end_time = clock();
 	std::cout << static_cast<double>(end_time - start_time)/CLOCKS_PER_SEC << '\n';
-
-    
 }
