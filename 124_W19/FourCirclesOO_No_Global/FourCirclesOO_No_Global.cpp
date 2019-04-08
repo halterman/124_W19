@@ -82,20 +82,12 @@ public:
 	}
 };
 
-CircleView circ;
-
-void draw() {
-	circ.paint();
-}
-
-void mouse_moved(double x, double y) {
-	circ.mouse_moved(x, y);
-}
-
 
 int main() {
-	sgl::create_window("Object-oriented Four Circles", 0, 600, 0, 600);
-	sgl::set_paint_function(draw);
-	sgl::set_mouse_moved_function(mouse_moved);
+	CircleView circ;
+	sgl::create_window("Object-oriented Four Circles (with no global variables)", 0, 600, 0, 600);
+	sgl::set_paint_function([&circ]() { circ.paint(); });
+	sgl::set_mouse_moved_function([&circ](double x, double y) { circ.mouse_moved(x, y); });
 	sgl::run_window();
 }
+
