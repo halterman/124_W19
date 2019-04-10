@@ -93,6 +93,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FourCirclesOO", "FourCircle
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FourCirclesOO_No_Global", "FourCirclesOO_No_Global\FourCirclesOO_No_Global.vcxproj", "{AC4E7C25-7864-47D8-BC31-85B8924FD572}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stringplay", "stringplay\stringplay.vcxproj", "{077FEEEB-94BE-41A7-8350-BF9B0D5B7DB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -455,6 +457,14 @@ Global
 		{AC4E7C25-7864-47D8-BC31-85B8924FD572}.Release|x64.ActiveCfg = Release|Win32
 		{AC4E7C25-7864-47D8-BC31-85B8924FD572}.Release|x86.ActiveCfg = Release|Win32
 		{AC4E7C25-7864-47D8-BC31-85B8924FD572}.Release|x86.Build.0 = Release|Win32
+		{077FEEEB-94BE-41A7-8350-BF9B0D5B7DB9}.Debug|x64.ActiveCfg = Debug|x64
+		{077FEEEB-94BE-41A7-8350-BF9B0D5B7DB9}.Debug|x64.Build.0 = Debug|x64
+		{077FEEEB-94BE-41A7-8350-BF9B0D5B7DB9}.Debug|x86.ActiveCfg = Debug|Win32
+		{077FEEEB-94BE-41A7-8350-BF9B0D5B7DB9}.Debug|x86.Build.0 = Debug|Win32
+		{077FEEEB-94BE-41A7-8350-BF9B0D5B7DB9}.Release|x64.ActiveCfg = Release|x64
+		{077FEEEB-94BE-41A7-8350-BF9B0D5B7DB9}.Release|x64.Build.0 = Release|x64
+		{077FEEEB-94BE-41A7-8350-BF9B0D5B7DB9}.Release|x86.ActiveCfg = Release|Win32
+		{077FEEEB-94BE-41A7-8350-BF9B0D5B7DB9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

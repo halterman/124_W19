@@ -47,6 +47,8 @@
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>c:\VC_Extra\include;$(IncludePath)</IncludePath>
     <LibraryPath>c:\VC_Extra\lib;$(LibraryPath)</LibraryPath>
+    <CodeAnalysisRuleSet>NativeMinimumRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -60,15 +62,16 @@
       <WarningLevel>Level4</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnablePREfast>false</EnablePREfast>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
     </Link>
     <PostBuildEvent>
-          <Command>copy /Y c:\VC_Extra\bin\glut32.dll "$(SolutionDir)Debug/glut32.dll"</Command>
+      <Command>copy /Y c:\VC_Extra\bin\glut32.dll "$(SolutionDir)Debug/glut32.dll"</Command>
     </PostBuildEvent>
     <PostBuildEvent>
-          <Message>Copy GLUT DLL to executable directory</Message>
+      <Message>Copy GLUT DLL to executable directory</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -87,10 +90,10 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <PostBuildEvent>
-          <Command>copy /Y c:\VC_Extra\bin\glut32.dll "$(SolutionDir)Release\glut32.dll"</Command>
+      <Command>copy /Y c:\VC_Extra\bin\glut32.dll "$(SolutionDir)Release\glut32.dll"</Command>
     </PostBuildEvent>
     <PostBuildEvent>
-          <Message>Copy GLUT DLL to executable directory</Message>
+      <Message>Copy GLUT DLL to executable directory</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -100,9 +103,9 @@
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
   <Target Name="AfterClean">
-      <ItemGroup>
-          <FilesToDelete Include="$(OutDir)\*.dll"/>
-      </ItemGroup>
-      <Delete Files="@(FilesToDelete)" />
+    <ItemGroup>
+      <FilesToDelete Include="$(OutDir)\*.dll" />
+    </ItemGroup>
+    <Delete Files="@(FilesToDelete)" />
   </Target>
 </Project>
