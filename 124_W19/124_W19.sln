@@ -95,6 +95,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FourCirclesOO_No_Global", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stringplay", "stringplay\stringplay.vcxproj", "{077FEEEB-94BE-41A7-8350-BF9B0D5B7DB9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RationalPlay", "RationalPlay\RationalPlay.vcxproj", "{76758348-72D3-4A08-96E8-F96D6D10ED5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -465,6 +467,14 @@ Global
 		{077FEEEB-94BE-41A7-8350-BF9B0D5B7DB9}.Release|x64.Build.0 = Release|x64
 		{077FEEEB-94BE-41A7-8350-BF9B0D5B7DB9}.Release|x86.ActiveCfg = Release|Win32
 		{077FEEEB-94BE-41A7-8350-BF9B0D5B7DB9}.Release|x86.Build.0 = Release|Win32
+		{76758348-72D3-4A08-96E8-F96D6D10ED5B}.Debug|x64.ActiveCfg = Debug|x64
+		{76758348-72D3-4A08-96E8-F96D6D10ED5B}.Debug|x64.Build.0 = Debug|x64
+		{76758348-72D3-4A08-96E8-F96D6D10ED5B}.Debug|x86.ActiveCfg = Debug|Win32
+		{76758348-72D3-4A08-96E8-F96D6D10ED5B}.Debug|x86.Build.0 = Debug|Win32
+		{76758348-72D3-4A08-96E8-F96D6D10ED5B}.Release|x64.ActiveCfg = Release|x64
+		{76758348-72D3-4A08-96E8-F96D6D10ED5B}.Release|x64.Build.0 = Release|x64
+		{76758348-72D3-4A08-96E8-F96D6D10ED5B}.Release|x86.ActiveCfg = Release|Win32
+		{76758348-72D3-4A08-96E8-F96D6D10ED5B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
