@@ -17,5 +17,4 @@ int main() {
 
 	Rational f3(1, 0);
 	std::cout << f3 << '\n';
-
 }

@@ -8,9 +8,11 @@ public:
 	//Rational();
 	//~Rational();
 	Rational(int n, int d);
-	Rational reduce();
-	int get_numerator();
-	int get_denominator();
+	Rational reduce() const;
+	int get_numerator() const;
+	int get_denominator() const;
+	void set_numerator(int n);
+	void set_denominator(int d);
 };
 
 std::ostream& operator<<(std::ostream& os, Rational r);

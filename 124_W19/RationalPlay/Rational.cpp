@@ -47,14 +47,26 @@ Rational::Rational(int n, int d) :
 	}
 }
 
-Rational Rational::reduce() {
+Rational Rational::reduce() const {
 	int factor = gcd(numerator, denominator);
 	return Rational(numerator / factor, denominator / factor);
 }
 
-int Rational::get_numerator() {
+int Rational::get_numerator() const {
 	return numerator;
 }
-int Rational::get_denominator() {
+int Rational::get_denominator() const {
 	return denominator;
+}
+
+void Rational::set_numerator(int n) {
+	numerator = n;
+}
+void Rational::set_denominator(int d) {
+	if (d == 0) {
+		std::cout << "Attempt to set denominator to zero\n";
+		exit(600);
+	}
+	else 
+		denominator = d;
 }
