@@ -17,7 +17,7 @@ int gcd(int m, int n) {
 		return gcd(n, m % n);
 }
 
-std::ostream& operator<<(std::ostream& os, Rational r) {
+std::ostream& operator<<(std::ostream & os, Rational r) {
 	os << r.get_numerator() << '/' << r.get_denominator();
 	return os;
 }
@@ -31,16 +31,16 @@ Rational operator*(Rational r1, Rational r2) {
 
 Rational operator+(Rational r1, Rational r2) {
 	Rational new_r1(r1.get_numerator() * r2.get_denominator(),
-		            r1.get_denominator() * r2.get_denominator()),
-		     new_r2(r2.get_numerator() * r1.get_denominator(),
-			        r2.get_denominator() * r1.get_denominator());
+		r1.get_denominator() * r2.get_denominator()),
+		new_r2(r2.get_numerator() * r1.get_denominator(),
+			r2.get_denominator() * r1.get_denominator());
 	Rational result(new_r1.get_numerator() + new_r2.get_numerator(),
-		            new_r1.get_denominator());
+		new_r1.get_denominator());
 	return result.reduce();
 }
 
-Rational::Rational(int n, int d):
-        numerator(n), denominator(d) {
+Rational::Rational(int n, int d) :
+	numerator(n), denominator(d) {
 	if (d == 0) {
 		std::cout << "Attempt to create an illegal Rational object\n";
 		exit(600);

@@ -124,10 +124,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="midpoint_test.cpp" />
-    <ClCompile Include="Rational.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Rational.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
