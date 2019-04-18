@@ -21,25 +21,32 @@ int gcd(int m, int n) {
 		return gcd(n, m % n);
 }
 
-std::ostream& operator<<(std::ostream & os, Rational2 r) {
+std::ostream& operator<<(std::ostream & os, const Rational2& r) {
 	os << r.get_numerator() << '/' << r.get_denominator();
 	return os;
 }
 
-Rational2 operator*(Rational2 r1, Rational2 r2) {
+Rational2 operator*(const Rational2& r1, const Rational2& r2) {
 	int num = r1.get_numerator() * r2.get_numerator(),
 		den = r1.get_denominator() * r2.get_denominator();
 	Rational2 result(num, den);
 	return result.reduce();
 }
 
-Rational2 operator+(Rational2 r1, Rational2 r2) {
-	Rational2 new_r1(r1.get_numerator() * r2.get_denominator(),
-		r1.get_denominator() * r2.get_denominator()),
-		new_r2(r2.get_numerator() * r1.get_denominator(),
-			r2.get_denominator() * r1.get_denominator());
-	Rational2 result(new_r1.get_numerator() + new_r2.get_numerator(),
-		new_r1.get_denominator());
+Rational2 operator+(const Rational2& r1, const Rational2& r2) {
+	// Original version: Make two temporary rational number objects
+	//Rational2 new_r1(r1.get_numerator() * r2.get_denominator(),
+	//	             r1.get_denominator() * r2.get_denominator()),
+	//	      new_r2(r2.get_numerator() * r1.get_denominator(),
+	//		         r2.get_denominator() * r1.get_denominator());
+
+	// Improved version: Don't two the two temporary rational number objects
+
+	// a/b + c/d = ad/bd + bc/bd = (ad + bc)/bd
+	int a = r1.get_numerator(), b = r1.get_denominator(),
+		c = r2.get_numerator(), d = r2.get_denominator();
+
+	Rational2 result(a * d + b * c, b * d);
 	return result.reduce();
 }
 

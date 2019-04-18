@@ -17,8 +17,8 @@ public:
 	void set_denominator(int d);
 };
 
-std::ostream& operator<<(std::ostream& os, Rational2 r);
+std::ostream& operator<<(std::ostream& os, const Rational2& r);
 
-Rational2 operator*(Rational2 r1, Rational2 r2);
+Rational2 operator*(const Rational2& r1, const Rational2& r2);
 
-Rational2 operator+(Rational2 r1, Rational2 r2);
+Rational2 operator+(const Rational2& r1, const Rational2& r2);
